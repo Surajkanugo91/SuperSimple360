@@ -9,6 +9,11 @@
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css"><script src="script.js" defer></script>
+<style>
+/* Keep WhatsApp and the ElevenLabs voice agent from overlapping. */
+.whatsapp-float{left:24px;right:auto}
+@media(max-width:600px){.whatsapp-float{left:15px;right:auto;bottom:15px}}
+</style>
 </head><body>
 <a class="skip-link" href="#main">Skip to content</a>
 <header class="site-header"><nav class="nav shell" aria-label="Main navigation">
@@ -79,4 +84,8 @@
 </main>
 <footer class="footer"><div class="shell footer-top"><img src="supersimple360-logo.png" alt="SuperSimple360"><p>Smarter AI solutions.<br>Simpler business.</p><nav aria-label="Footer navigation"><a href="#services">Solutions</a><a href="#use-cases">Use cases</a><a href="#faq">FAQ</a><a href="#contact">Contact</a></nav></div><div class="shell footer-bottom"><span>© 2026 SuperSimple360. All rights reserved.</span><span>SuperSimple360.com</span></div></footer>
 <a class="whatsapp-float" id="waFloat" href="https://wa.me/918208335661?text=Hello%20SuperSimple360%2C%20I%27d%20like%20a%20free%20workflow%20audit." target="_blank" rel="noopener" aria-label="Chat with SuperSimple360 on WhatsApp">◉ <span>Chat on WhatsApp</span></a>
+
+<!-- ElevenLabs AI Business Assistant -->
+<elevenlabs-convai agent-id="agent_2401m1r9kn48eh2v8zsaepec1h0g"></elevenlabs-convai>
+<script src="https://unpkg.com/@elevenlabs/convai-widget-embed" async type="text/javascript"></script>
 </body></html>
